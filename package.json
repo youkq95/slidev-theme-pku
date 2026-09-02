@@ -1,0 +1,52 @@
+{
+  "name": "slidev-theme-pku",
+  "version": "0.1.0",
+  "description": "A PKU-inspired academic presentation theme for Slidev",
+  "author": {
+    "name": "youkq95",
+    "url": "https://github.com/youkq95"
+  },
+  "license": "MIT",
+  "keywords": [
+    "slidev-theme",
+    "slidev",
+    "pku",
+    "peking-university",
+    "academic",
+    "thesis-defense",
+    "research-presentation",
+    "institutional-branding"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "slidev": ">=0.50.0"
+  },
+  "slidev": {
+    "colorSchema": "light",
+    "highlights": ["github-light"],
+    "defaults": {
+      "canvasWidth": 1280,
+      "color": "#222A35",
+      "fonts": {
+        "sans": "Avenir Next,Inter,Helvetica Neue,Arial,Microsoft YaHei,PingFang SC,Noto Sans SC,sans-serif",
+        "serif": "Georgia,Times New Roman,Noto Serif SC,SimSun,serif",
+        "mono": "Fira Code,JetBrains Mono,monospace",
+        "local": "Avenir Next,Inter,Helvetica Neue,Arial,Microsoft YaHei,PingFang SC,SimSun,sans-serif"
+      },
+      "themeConfig": {}
+    }
+  },
+  "scripts": {
+    "dev": "slidev example.md --open false",
+    "build": "slidev build example.md",
+    "export": "slidev export example.md"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^52.18.0",
+    "@slidev/types": "^52.18.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/youkq95/slidev-theme-pku"
+  }
+}

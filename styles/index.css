@@ -1,0 +1,113 @@
+/**
+ * Global styles for the PKU-inspired Slidev theme.
+ *
+ * Customize the theme in either place:
+ * 1. In the first slide's frontmatter (recommended):
+ *      ---
+ *      themeConfig:
+ *        primary: '#9A0001'   # accent color
+ *        sealColor: '#8B0012' # seal/deep accent color
+ *        text: '#222A35'      # body text color
+ *      ---
+ *    Slidev maps themeConfig keys to --slidev-theme-<key> CSS variables.
+ * 2. In the project's styles.css:
+ *      :root { --slidev-theme-primary: #9A0001; }
+ */
+
+:root {
+  /* PKU red (template accent1). */
+  --slidev-theme-primary: #9A0001;
+  /* Deep accent fallback when themeConfig.sealColor is not set. */
+  --pku-deep: color-mix(in srgb, var(--slidev-theme-primary) 90%, black);
+  /* Dark body and cover text. */
+  --pku-text: #222A35;
+  --pku-text-secondary: #515862;
+  /* Gray rule below titles. */
+  --pku-line: #A6A6A6;
+  /* Footer hairline. */
+  --pku-hairline: #C6CAD1;
+  /* Slide background. */
+  --pku-bg: #FFFFFF;
+}
+
+html, body, #app {
+  background: var(--slidev-theme-bg, var(--pku-bg));
+}
+
+.slidev-layout {
+  font-family: 'Avenir Next', Inter, 'Helvetica Neue', Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans SC', sans-serif;
+  color: var(--slidev-theme-text, var(--pku-text));
+  background: var(--slidev-theme-bg, var(--pku-bg));
+}
+
+/* ---------- Content typography ---------- */
+
+.slidev-layout {
+  h1 { font-weight: 700; }
+  h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--slidev-theme-text, var(--pku-text));
+    margin: 0.4em 0 0.35em;
+  }
+  h3 {
+    font-size: 23px;
+    font-weight: 700;
+    color: var(--slidev-theme-text, var(--pku-text));
+    margin: 0.4em 0 0.3em;
+  }
+  h2, h3 {
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 7px;
+      height: 0.82em;
+      margin-right: 0.45em;
+      vertical-align: -0.06em;
+      background: var(--slidev-theme-primary);
+    }
+  }
+  p {
+    font-size: 22px;
+    line-height: 1.65;
+    margin: 0.45em 0;
+  }
+  ul, ol {
+    margin: 0.4em 0;
+    padding-left: 1.4em;
+  }
+  li {
+    font-size: 22px;
+    line-height: 1.6;
+    margin: 0.42em 0;
+    &::marker { color: var(--slidev-theme-primary); }
+  }
+  ul > li::marker { content: '➢  '; }
+  strong, b { color: var(--slidev-theme-text, var(--pku-text)); }
+  a { color: var(--slidev-theme-primary); }
+  blockquote {
+    border-left: 5px solid var(--slidev-theme-primary);
+    background: color-mix(in srgb, var(--slidev-theme-primary) 6%, transparent);
+    padding: 0.4em 1em;
+    border-radius: 4px;
+    font-style: normal;
+    p { margin: 0.2em 0; }
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 20px;
+    th, td { padding: 8px 12px; }
+    th {
+      color: #fff;
+      background: var(--slidev-theme-primary);
+      font-weight: 700;
+    }
+    tbody tr:nth-child(even) { background: color-mix(in srgb, var(--slidev-theme-primary) 5%, transparent); }
+  }
+}
+
+/* Inline code blocks. */
+.slidev-code {
+  font-size: 16px !important;
+}
