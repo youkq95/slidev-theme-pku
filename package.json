@@ -47,6 +47,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/youkq95/slidev-theme-pku"
+    "url": "git+https://github.com/youkq95/slidev-theme-pku.git"
   }
 }
