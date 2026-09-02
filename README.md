@@ -292,6 +292,19 @@ layout-helper.ts  Shared frontmatter and asset helpers
 
 When changing a layout, preview `example.md` in the browser and run `npm run build` before submitting a change.
 
+## Publishing and Slidev gallery listing
+
+The package is unscoped, so the first release can be published publicly with:
+
+```bash
+npm pack --dry-run
+npm publish --access public
+```
+
+The npm account may require a one-time password or a granular access token with publish permission. A package name and version cannot be reused after a successful publication; bump `version` before each subsequent release.
+
+Publishing to npm does not automatically add a theme to Slidev's gallery. After the package and repository are public, submit a pull request to [Slidev's theme registry](https://github.com/slidevjs/slidev/blob/main/docs/.vitepress/themes.ts) with a `ThemeInfo` entry containing the package id, description, repository, author, tags, and public preview image URLs. Keep preview images in this repository (or another stable public host) so the gallery can render them reliably.
+
 ## Design references
 
 The layout organization and documentation style were informed by the [Slidev default theme](https://github.com/slidevjs/themes/tree/main/packages/theme-default), [slidev-theme-academic](https://github.com/alexanderdavide/slidev-theme-academic), [slidev-theme-hep](https://github.com/AvencastF/slidev-theme-hep), the [Slidev theme gallery](https://sli.dev/resources/theme-gallery), and Slidev's [theme registry](https://github.com/slidevjs/slidev/blob/main/docs/.vitepress/themes.ts).
