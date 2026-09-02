@@ -13,7 +13,6 @@ drawings:
   persist: false
 transition: slide-left
 themeConfig:
-  schoolName: Example Institute
   schoolNameEn: EXAMPLE INSTITUTE
 ---
 
