@@ -236,6 +236,16 @@ For one-off color changes, a project-level `styles.css` can override the variabl
 }
 ```
 
+### Fonts
+
+Body text uses `Arial, Helvetica, Microsoft YaHei, PingFang SC, Noto Sans SC`. Browsers select the first font that contains each glyph, so Latin text uses Arial (or Helvetica) while Chinese text falls back to Microsoft YaHei. Override the stack in your project stylesheet when you need a different typeface:
+
+```css
+.slidev-layout {
+  font-family: Arial, Helvetica, 'Microsoft YaHei', sans-serif;
+}
+```
+
 ## Components
 
 The following components are available in any slide:

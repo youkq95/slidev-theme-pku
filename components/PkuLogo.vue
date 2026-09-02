@@ -71,13 +71,13 @@ const enSize = computed(() => `${Math.max(9, Math.round(props.size * 0.24))}px`)
 .pku-logo-name {
   font-size: v-bind(nameSize);
   font-weight: 700;
-  font-family: 'STKaiti', 'KaiTi', 'Microsoft YaHei', serif;
+  font-family: Arial, Helvetica, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans SC', sans-serif;
   letter-spacing: 0.12em;
 }
 .pku-logo-en {
   font-size: v-bind(enSize);
   font-weight: 500;
   letter-spacing: 0.05em;
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 </style>

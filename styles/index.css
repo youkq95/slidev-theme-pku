@@ -35,7 +35,8 @@ html, body, #app {
 }
 
 .slidev-layout {
-  font-family: 'Avenir Next', Inter, 'Helvetica Neue', Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans SC', sans-serif;
+  /* Latin glyphs use Arial/Helvetica; CJK glyphs fall back to Microsoft YaHei. */
+  font-family: Arial, Helvetica, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans SC', sans-serif;
   color: var(--slidev-theme-text, var(--pku-text));
   background: var(--slidev-theme-bg, var(--pku-bg));
 }

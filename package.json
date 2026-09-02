@@ -28,10 +28,10 @@
       "canvasWidth": 1280,
       "color": "#222A35",
       "fonts": {
-        "sans": "Avenir Next,Inter,Helvetica Neue,Arial,Microsoft YaHei,PingFang SC,Noto Sans SC,sans-serif",
+        "sans": "Arial,Helvetica,Microsoft YaHei,PingFang SC,Noto Sans SC,sans-serif",
         "serif": "Georgia,Times New Roman,Noto Serif SC,SimSun,serif",
         "mono": "Fira Code,JetBrains Mono,monospace",
-        "local": "Avenir Next,Inter,Helvetica Neue,Arial,Microsoft YaHei,PingFang SC,SimSun,sans-serif"
+        "local": "Arial,Helvetica,Microsoft YaHei,PingFang SC,SimSun,sans-serif"
       },
       "themeConfig": {}
     }
